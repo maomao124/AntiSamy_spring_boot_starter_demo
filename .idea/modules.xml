@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AntiSamy_spring_boot_starter_demo.iml" filepath="$PROJECT_DIR$/AntiSamy_spring_boot_starter_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools-xss/tools-xss.iml" filepath="$PROJECT_DIR$/tools-xss/tools-xss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/use-starter/use-starter.iml" filepath="$PROJECT_DIR$/use-starter/use-starter.iml" />
+    </modules>
+  </component>
+</project>
