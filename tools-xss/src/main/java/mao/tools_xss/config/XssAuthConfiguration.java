@@ -2,6 +2,7 @@ package mao.tools_xss.config;
 
 import mao.tools_xss.converter.XssStringJsonDeserializer;
 import mao.tools_xss.filter.XssFilter;
+import mao.tools_xss.service.XssFilterService;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -72,5 +73,11 @@ public class XssAuthConfiguration
         initParameters.put("isIncludeRichText", "true");
         filterRegistration.setInitParameters(initParameters);
         return filterRegistration;
+    }
+
+    @Bean
+    public XssFilterService xssFilterService()
+    {
+        return new XssFilterService();
     }
 }
