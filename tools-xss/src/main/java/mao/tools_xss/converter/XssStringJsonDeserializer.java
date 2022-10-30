@@ -28,6 +28,44 @@ import java.util.List;
 
 public class XssStringJsonDeserializer extends JsonDeserializer<String>
 {
+
+    private static final List<String> list = new ArrayList<>();
+
+    static
+    {
+        list.add("<script>");
+        list.add("</script>");
+        list.add("<iframe>");
+        list.add("</iframe>");
+        list.add("<noscript>");
+        list.add("</noscript>");
+        list.add("<frameset>");
+        list.add("</frameset>");
+        list.add("<frame>");
+        list.add("</frame>");
+        list.add("<noframes>");
+        list.add("</noframes>");
+        list.add("<h1>");
+        list.add("</h1>");
+        list.add("<h2>");
+        list.add("</h2>");
+        list.add("<h3>");
+        list.add("</h3>");
+        list.add("<h4>");
+        list.add("</h4>");
+        list.add("<h5>");
+        list.add("</h5>");
+        list.add("<h6>");
+        list.add("</h6>");
+        list.add("<img>");
+        list.add("</img>");
+        list.add("<table>");
+        list.add("</table>");
+        list.add("<form>");
+        list.add("</form>");
+    }
+
+
     @Override
     public String deserialize(JsonParser p, DeserializationContext dc) throws IOException, JsonProcessingException
     {
@@ -40,19 +78,6 @@ public class XssStringJsonDeserializer extends JsonDeserializer<String>
                 return value;
             }
 
-            List<String> list = new ArrayList<>();
-            list.add("<script>");
-            list.add("</script>");
-            list.add("<iframe>");
-            list.add("</iframe>");
-            list.add("<noscript>");
-            list.add("</noscript>");
-            list.add("<frameset>");
-            list.add("</frameset>");
-            list.add("<frame>");
-            list.add("</frame>");
-            list.add("<noframes>");
-            list.add("</noframes>");
             boolean flag = list.stream().anyMatch(value::contains);
             if (flag)
             {

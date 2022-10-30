@@ -1,43 +1,54 @@
-2022-10-30 21:01:51.378 DEBUG 14756 --- [SpringApplicationShutdownHook] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] destroy
-2022-10-30 21:01:54.626  INFO 13832 --- [main] mao.use_starter.UseStarterApplication    : Starting UseStarterApplication using Java 16.0.2 on mao with PID 13832 (H:\程序\大四上期\demo\AntiSamy_spring_boot_starter_demo\use-starter\target\classes started by mao in H:\程序\大四上期\demo\AntiSamy_spring_boot_starter_demo)
-2022-10-30 21:01:54.629 DEBUG 13832 --- [main] mao.use_starter.UseStarterApplication    : Running with Spring Boot v2.7.1, Spring v5.3.21
-2022-10-30 21:01:54.629  INFO 13832 --- [main] mao.use_starter.UseStarterApplication    : No active profile set, falling back to 1 default profile: "default"
-2022-10-30 21:01:55.258  INFO 13832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-30 21:01:55.264  INFO 13832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-30 21:01:55.265  INFO 13832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-10-30 21:01:55.343  INFO 13832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-30 21:01:55.343  INFO 13832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
-2022-10-30 21:01:55.374 DEBUG 13832 --- [main] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] init start ...
-2022-10-30 21:01:55.398 DEBUG 13832 --- [main] mao.tools_xss.filter.XssFilter           : ignorePathList=null
-2022-10-30 21:01:55.399 DEBUG 13832 --- [main] mao.tools_xss.filter.XssFilter           : ignoreParamValueList=["samlp:LogoutRequest"]
-2022-10-30 21:01:55.399 DEBUG 13832 --- [main] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] init end
-2022-10-30 21:01:55.564  INFO 13832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-10-30 21:01:55.656  INFO 13832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-10-30 21:01:55.665  INFO 13832 --- [main] mao.use_starter.UseStarterApplication    : Started UseStarterApplication in 1.352 seconds (JVM running for 1.811)
-2022-10-30 21:02:04.639  INFO 13832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-30 21:02:04.639  INFO 13832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-10-30 21:02:04.640  INFO 13832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-10-30 21:02:04.644 DEBUG 13832 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
-2022-10-30 21:02:04.644 DEBUG 13832 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
-2022-10-30 21:02:04.695  INFO 13832 --- [http-nio-8080-exec-1] m.u.controller.StudentController         : 添加成功：
+2022-10-30 21:46:32.751  INFO 19860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-30 21:46:32.754  INFO 19860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-30 21:46:32.755  INFO 19860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-30 21:46:32.762 DEBUG 19860 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:46:32.762 DEBUG 19860 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student/init] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:46:32.782  INFO 19860 --- [http-nio-8080-exec-1] m.u.controller.StudentController         : 初始化完成
+2022-10-30 21:46:32.796 DEBUG 19860 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:46:34.505 DEBUG 19860 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:46:34.506 DEBUG 19860 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:46:34.506  INFO 19860 --- [http-nio-8080-exec-2] m.u.controller.StudentController         : 查询所有：
+[id：10001
+name：张三
+sex：男
+age：18
+, id：10002
+name：李四
+sex：女
+age：16
+, id：10003
+name：王五
+sex：男
+age：20
+]
+2022-10-30 21:46:34.536 DEBUG 19860 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:46:42.944 DEBUG 19860 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:46:42.945 DEBUG 19860 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:46:42.967  INFO 19860 --- [http-nio-8080-exec-3] m.u.controller.StudentController         : 添加成功：
 id：111
 name：<h1>xss攻击</h1>
-sex：21
-age：4
+sex：男
+age：8
 
-2022-10-30 21:02:04.707 DEBUG 13832 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
-2022-10-30 21:03:36.670 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
-2022-10-30 21:03:36.670 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
-2022-10-30 21:03:36.671 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             :  start read XSS configfile [antisamy-slashdot-1.4.4.xml]
-2022-10-30 21:03:36.682 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : read XSS configfile [antisamy-slashdot-1.4.4.xml] success
-2022-10-30 21:03:36.683 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : raw value before xssClean: <script>alert("xss攻击")</script>12
-2022-10-30 21:03:36.703 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : 出于安全的原因，标记script不被允许。此标记不应该影响输入的显示。
-2022-10-30 21:03:36.704 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : xssfilter value after xssClean12
-2022-10-30 21:03:36.704  INFO 13832 --- [http-nio-8080-exec-3] m.u.controller.StudentController         : 添加成功：
-id：111
-name：12
-sex：21
-age：4
-
-2022-10-30 21:03:36.706 DEBUG 13832 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
-2022-10-30 21:06:17.030 DEBUG 13832 --- [SpringApplicationShutdownHook] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] destroy
+2022-10-30 21:46:42.968 DEBUG 19860 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:46:58.377 DEBUG 19860 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:46:58.377 DEBUG 19860 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:46:58.377  INFO 19860 --- [http-nio-8080-exec-4] m.u.controller.StudentController         : 查询所有：
+[id：10001
+name：张三
+sex：男
+age：18
+, id：10002
+name：李四
+sex：女
+age：16
+, id：10003
+name：王五
+sex：男
+age：20
+, id：111
+name：<h1>xss攻击</h1>
+sex：男
+age：8
+]
+2022-10-30 21:46:58.379 DEBUG 19860 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
