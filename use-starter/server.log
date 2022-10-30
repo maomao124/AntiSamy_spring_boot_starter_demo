@@ -1,0 +1,5 @@
+2022-10-30 21:56:30.338  INFO 12644 --- [main] m.u.UseStarterApplicationTests           : Starting UseStarterApplicationTests using Java 16.0.2 on mao with PID 12644 (started by mao in H:\程序\大四上期\AntiSamy_spring_boot_starter_demo\use-starter)
+2022-10-30 21:56:30.339 DEBUG 12644 --- [main] m.u.UseStarterApplicationTests           : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-10-30 21:56:30.340  INFO 12644 --- [main] m.u.UseStarterApplicationTests           : No active profile set, falling back to 1 default profile: "default"
+2022-10-30 21:56:31.667  INFO 12644 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-10-30 21:56:31.927  INFO 12644 --- [main] m.u.UseStarterApplicationTests           : Started UseStarterApplicationTests in 1.94 seconds (JVM running for 2.764)

@@ -52,3 +52,4 @@ sex：男
 age：8
 ]
 2022-10-30 21:46:58.379 DEBUG 19860 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:56:13.778 DEBUG 19860 --- [SpringApplicationShutdownHook] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] destroy
