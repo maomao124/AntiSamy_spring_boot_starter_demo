@@ -1,0 +1,143 @@
+2022-10-30 20:56:28.182  INFO 14756 --- [main] mao.use_starter.UseStarterApplication    : Starting UseStarterApplication using Java 16.0.2 on mao with PID 14756 (H:\程序\大四上期\demo\AntiSamy_spring_boot_starter_demo\use-starter\target\classes started by mao in H:\程序\大四上期\demo\AntiSamy_spring_boot_starter_demo)
+2022-10-30 20:56:28.184 DEBUG 14756 --- [main] mao.use_starter.UseStarterApplication    : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-10-30 20:56:28.185  INFO 14756 --- [main] mao.use_starter.UseStarterApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-10-30 20:56:28.806  INFO 14756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-30 20:56:28.813  INFO 14756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-30 20:56:28.813  INFO 14756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-10-30 20:56:28.896  INFO 14756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-30 20:56:28.896  INFO 14756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
+2022-10-30 20:56:28.927 DEBUG 14756 --- [main] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] init start ...
+2022-10-30 20:56:28.952 DEBUG 14756 --- [main] mao.tools_xss.filter.XssFilter           : ignorePathList=null
+2022-10-30 20:56:28.953 DEBUG 14756 --- [main] mao.tools_xss.filter.XssFilter           : ignoreParamValueList=["samlp:LogoutRequest"]
+2022-10-30 20:56:28.953 DEBUG 14756 --- [main] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] init end
+2022-10-30 20:56:29.123  INFO 14756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-10-30 20:56:29.217  INFO 14756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-30 20:56:29.225  INFO 14756 --- [main] mao.use_starter.UseStarterApplication    : Started UseStarterApplication in 1.351 seconds (JVM running for 1.808)
+2022-10-30 20:57:23.681  INFO 14756 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-30 20:57:23.682  INFO 14756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-30 20:57:23.683  INFO 14756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-30 20:57:23.689 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:23.690 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : has xssfiter path[/] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:23.704 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             :  start read XSS configfile [antisamy-slashdot-1.4.4.xml]
+2022-10-30 20:57:23.713 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             : read XSS configfile [antisamy-slashdot-1.4.4.xml] success
+2022-10-30 20:57:23.714 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:23.740 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:23.747 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:23.748 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:23.752 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:23.848 DEBUG 14756 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:23.849 DEBUG 14756 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : has xssfiter path[/css/link.css] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:23.849 DEBUG 14756 --- [http-nio-8080-exec-2] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/css,*/*;q=0.1
+2022-10-30 20:57:23.849 DEBUG 14756 --- [http-nio-8080-exec-2] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/css,*/*;q=0.1
+2022-10-30 20:57:23.849 DEBUG 14756 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:23.850 DEBUG 14756 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : has xssfiter path[/js/axios.js] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:23.850 DEBUG 14756 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : raw value before xssClean: */*
+2022-10-30 20:57:23.850 DEBUG 14756 --- [http-nio-8080-exec-3] mao.tools_xss.utils.XssUtils             : xssfilter value after xssClean*/*
+2022-10-30 20:57:23.851 DEBUG 14756 --- [http-nio-8080-exec-2] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:23.852 DEBUG 14756 --- [http-nio-8080-exec-3] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:23.949 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:23.949 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : has xssfiter path[/favicon.ico] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:23.950 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.utils.XssUtils             : raw value before xssClean: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-10-30 20:57:23.950 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleanimage/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-10-30 20:57:23.952 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:25.559 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:25.559 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : has xssfiter path[/show.html] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:25.559 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:25.560 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:57:25.561 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:25.598 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:25.598 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : has xssfiter path[/css/table.css] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:25.598 DEBUG 14756 --- [http-nio-8080-exec-7] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:25.598 DEBUG 14756 --- [http-nio-8080-exec-7] mao.tools_xss.filter.XssFilter           : has xssfiter path[/js/vue.js] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:25.598 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/css,*/*;q=0.1
+2022-10-30 20:57:25.599 DEBUG 14756 --- [http-nio-8080-exec-7] mao.tools_xss.utils.XssUtils             : raw value before xssClean: */*
+2022-10-30 20:57:25.599 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/css,*/*;q=0.1
+2022-10-30 20:57:25.599 DEBUG 14756 --- [http-nio-8080-exec-7] mao.tools_xss.utils.XssUtils             : xssfilter value after xssClean*/*
+2022-10-30 20:57:25.601 DEBUG 14756 --- [http-nio-8080-exec-7] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:25.601 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:25.644 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:25.644 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:25.645  INFO 14756 --- [http-nio-8080-exec-8] m.u.controller.StudentController         : 查询所有：
+[]
+2022-10-30 20:57:25.649 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:27.904 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:27.904 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student/init] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:27.904  INFO 14756 --- [http-nio-8080-exec-9] m.u.controller.StudentController         : 初始化完成
+2022-10-30 20:57:27.905 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:29.573 DEBUG 14756 --- [http-nio-8080-exec-10] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:29.573 DEBUG 14756 --- [http-nio-8080-exec-10] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:29.574  INFO 14756 --- [http-nio-8080-exec-10] m.u.controller.StudentController         : 查询所有：
+[id：10001
+name：张三
+sex：男
+age：18
+, id：10002
+name：李四
+sex：女
+age：16
+, id：10003
+name：王五
+sex：男
+age：20
+]
+2022-10-30 20:57:29.582 DEBUG 14756 --- [http-nio-8080-exec-10] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:57:56.535 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:57:56.535 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:57:56.535  INFO 14756 --- [http-nio-8080-exec-1] m.u.controller.StudentController         : 查询所有：
+[id：10001
+name：张三
+sex：男
+age：18
+, id：10002
+name：李四
+sex：女
+age：16
+, id：10003
+name：王五
+sex：男
+age：20
+]
+2022-10-30 20:57:56.536 DEBUG 14756 --- [http-nio-8080-exec-1] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:59:20.360 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:59:20.360 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : has xssfiter path[/save.html] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:59:20.361 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:59:20.361 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-10-30 20:59:20.363 DEBUG 14756 --- [http-nio-8080-exec-4] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 20:59:20.396 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 20:59:20.396 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : has xssfiter path[/css/form.css] need XssFilter, go to XssRequestWrapper
+2022-10-30 20:59:20.396 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.utils.XssUtils             : raw value before xssClean: text/css,*/*;q=0.1
+2022-10-30 20:59:20.397 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.utils.XssUtils             : xssfilter value after xssCleantext/css,*/*;q=0.1
+2022-10-30 20:59:20.398 DEBUG 14756 --- [http-nio-8080-exec-5] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:00:05.808 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:00:05.808 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:00:05.825 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.utils.XssUtils             : raw value before xssClean: <script>alert("xss攻击")</script>
+2022-10-30 21:00:05.827 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.utils.XssUtils             : 出于安全的原因，标记script不被允许。此标记不应该影响输入的显示。
+2022-10-30 21:00:05.827 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.utils.XssUtils             : xssfilter value after xssClean
+2022-10-30 21:00:05.832  INFO 14756 --- [http-nio-8080-exec-6] m.u.controller.StudentController         : 添加成功：
+id：111
+name：
+sex：21
+age：4
+
+2022-10-30 21:00:05.833 DEBUG 14756 --- [http-nio-8080-exec-6] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:00:38.654 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:00:38.655 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:00:38.655 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.utils.XssUtils             : raw value before xssClean: <script>alert("xss攻击")</script>12
+2022-10-30 21:00:38.656 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.utils.XssUtils             : 出于安全的原因，标记script不被允许。此标记不应该影响输入的显示。
+2022-10-30 21:00:38.656 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.utils.XssUtils             : xssfilter value after xssClean12
+2022-10-30 21:00:38.656  INFO 14756 --- [http-nio-8080-exec-8] m.u.controller.StudentController         : 添加成功：
+id：111
+name：12
+sex：21
+age：4
+
+2022-10-30 21:00:38.657 DEBUG 14756 --- [http-nio-8080-exec-8] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop
+2022-10-30 21:00:46.678 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] starting
+2022-10-30 21:00:46.679 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : has xssfiter path[/student] need XssFilter, go to XssRequestWrapper
+2022-10-30 21:00:46.682  INFO 14756 --- [http-nio-8080-exec-9] m.u.controller.StudentController         : 添加成功：
+id：111
+name：&lt;h1&gt;xss攻击&lt;/h1&gt;
+sex：21
+age：4
+
+2022-10-30 21:00:46.682 DEBUG 14756 --- [http-nio-8080-exec-9] mao.tools_xss.filter.XssFilter           : XSS fiter [XSSFilter] stop

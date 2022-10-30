@@ -1,6 +1,7 @@
 package mao.use_starter.controller;
 
 
+import mao.tools_xss.service.XssFilterService;
 import mao.use_starter.entity.Student;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,25 +49,25 @@ public class StudentController
         log.info("初始化完成");
     }
 
-//    @PostMapping
-//    public boolean save(@RequestBody Student student)
-//    {
-//        list.add(student);
-//        log.info("添加成功：\n" + student);
-//        return true;
-//    }
-
-
     @PostMapping
     public boolean save(@RequestBody Student student)
     {
-        student.setName(xssFilterService.xssClean(student.getName()));
-        student.setSex(xssFilterService.xssClean(student.getSex()));
-
         list.add(student);
         log.info("添加成功：\n" + student);
         return true;
     }
+
+
+//    @PostMapping
+//    public boolean save(@RequestBody Student student)
+//    {
+//        student.setName(xssFilterService.xssClean(student.getName()));
+//        student.setSex(xssFilterService.xssClean(student.getSex()));
+//
+//        list.add(student);
+//        log.info("添加成功：\n" + student);
+//        return true;
+//    }
 
 
     @PostMapping("/sync")
